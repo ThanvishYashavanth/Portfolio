@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thanvish yashavanth | Creative Developer</title>
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {font-family: 'Segoe UI', sans-serif;background: #f9f9f9;color: #333;line-height: 1.6;}
+    a {color: #0066ff;text-decoration: none;}
+    a:hover {text-decoration: underline;}
+    h1, h2, h3 {margin-bottom: 1rem;}
+    /* Hero */
+    .hero{background: linear-gradient(to bottom, rgba(0,0,0,0), #151515);}
+    .pic{height: 300px;width: 1300px;}
+    .toggle-btn {position: absolute;top: 1rem;right: 1rem;background: rgba(255,255,255,0.2);border: none;color: white;padding: 0.5rem;border-radius: 50%;cursor: pointer;transition: background 0.3s;}
+    .toggle-btn:hover {background: rgba(255,255,255,0.4);}
+    body.dark {background: #121212;color: #e0e0e0;}
+    /* Add dark mode styles for specific elements */
+    body.dark .carousel-item { background: #1e1e1e; }
+    body.dark .certificate { background: #1e1e1e; }
+    body.dark .modal-content { background: #1e1e1e; }
+    body.dark form { background: #1e1e1e; }
+    body.dark input, body.dark textarea { background: #333; border-color: #555; color: #e0e0e0; }
+    body.dark footer { background: #000; }
+    .profile{width: 200px;height: 200px;color: white;border-radius: 50%;box-shadow: black;margin-right: 5px;}   
+    .hero-content{display: flex;margin-left: 10px;}
+    .hero h1 {font-size: 3rem;margin-bottom: 1rem;}
+    .hero p {font-size: 1.2rem;margin-left: 10px;}
+    .btn {margin-top: 1.5rem;display: inline-block;background: rgb(6, 202, 236);color: #0e5ce1;padding: 0.7rem 1.5rem;border-radius: 5px;font-weight: bold;transition: background 0.3s;}
+    .know{background-color:white;color: #151515;}
+    .btn:hover {background: #e0e0e0;}
+    /* Sections */
+    .section {padding: 3rem 2rem;max-width: 960px;margin: auto;margin-top: 30px;}
+    .skills {display: flex;flex-wrap: wrap;gap: 1rem;list-style: none;}
+    .skills li {background: #2a5298;color: white;padding: 0.5rem 1rem;border-radius: 20px;}
+    /* Projects */
+    .projects-grid {display: grid;gap: 2rem;grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));}
+    .project-card {background: white;padding: 1.5rem;border-radius: 10px;box-shadow: 0 2px 10px rgba(0,0,0,0.1);}
+    .project-card h3 {color: #2a5298;align-items: flex-end;}
+    .project-card a {display: inline-block;margin-top: 1rem;}
+    .soon {background-color: white;color: green;margin-top: 50px;margin-left: 100px;}
+    /*------certificates-----*/
+    .certificate-grid {display: grid;gap: 2rem;grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));overflow: hidden;}
+    .certificate-card{background: white;padding: 1.5rem;border-radius: 10px;box-shadow: 0 2px 10px rgba(0,0,0,0.1);}
+    .project-card h3 {color: #2a5298;}
+    .project-card a {display: inline-block;margin-top: 1rem;}
+    /* Footer */
+    .footer {text-align: center;padding: 2rem;background: #1e3c72;color: white;}
+    /* Mobile Responsiveness */
+     @media (max-width: 768px) {
+      .pic { width: 100%; height: auto; max-height: 200px; }
+      .hero-content { flex-direction: column; align-items: center; margin-left: 0; text-align: center; }
+      .profile { width: 150px; height: 150px; margin-right: 0; margin-bottom: 1rem; }
+      .hero h1 { font-size: 2rem; }
+      .hero p { font-size: 1rem; margin-left: 0; }
+      .btn { padding: 0.6rem 1.2rem; font-size: 0.9rem; }
+      .section { padding: 2rem 1rem; margin-top: 20px; }
+      h2 { font-size: 1.8rem; }
+      h3 { font-size: 1.5rem; }
+      .skills { justify-content: center; gap: 0.5rem; }
+      .skills li { padding: 0.4rem 0.8rem; font-size: 0.9rem; }
+      .projects-grid, .certificate-grid { grid-template-columns: 1fr; gap: 1rem; }
+      .project-card, .certificate-card { padding: 1rem; }
+      .certificate-card img { max-height: 120px; border-radius: 10px; }
+      .certificate-card h3 { font-size: 1.2rem; }
+      .certificate-card a { font-size: 0.9rem; }
+      .soon { margin-left: 0; text-align: center; }
+      .footer { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <img class="pic"src="https://raw.githubusercontent.com/ThanvishYashavanth/Portfolio/main/files/back%20img.jpeg">
+    <button class="toggle-btn" onclick="toggleDarkMode()">🌙</button>
+  </header>
+
+  <!-- About -->
+  <div class="hero-content">
+        <div>
+            <img class="profile"src="https://raw.githubusercontent.com/ThanvishYashavanth/Portfolio/main/files/Untitled%20design.png" id="png">
+        </div>
+        <div>
+            <p>
+            <h1>Thanvish Yashavanth</h1>
+           <h3>BSc Computer Science</h3>
+            <p>Fresher</p>
+            <a href="https://thanvishyashavanth.github.io/know-me/" class="btn">Know about me</a>
+        </div>
+    </div>
+  <section class="section" id="about">
+    <h2>Education :</h2>
+    <h3>School:</h3>
+    <h4>Sarojini Madhusudhan Kushe</h4>
+    <p>Attavar,mangalore-575001</p>
+    <br>
+    <h3>Collage:</h3>
+    <h4>Dr NSAM Pre-University College</h4>
+    <h5>Nitte (Deemed to be Uiniversity) </h5>
+    <p>Nanthoor,mangalore-575001</p>
+    <br>
+    <h3>Graduation:</h3>
+    <h4>Dr. P. Dayananda Pai - P. Satisha Pai Government First Grade College Mangalore</h4>
+    <p> Car Street, near Sharada press, Road,mangalore-575001</p>
+    <br>
+    <p>
+      I am a highly motivated Computer Science graduate with a strong foundation in programming, software development, and problem-solving. Proficient in languages such as Python, Java, and C++, I have a keen interest in artificial intelligence, web development, and database management. My academic background and hands-on experience have equipped me with the ability to analyze complex challenges and implement efficient solutions. Committed to continuous learning and innovation, I am eager to contribute my skills to dynamic projects and collaborate with industry professionals. I look forward to leveraging my technical expertise to drive meaningful advancements in the tech sector.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>HTML5</li>
+      <li>css</li>
+      <li>JavaScript Basics</li>
+      <li>Microsoft power Bi </li>
+      <li>Microsoft Excel</li>
+      <li>Template Designing</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>LOGIN PAGE</h3>
+        <p>A personal website built with html and css for seamless animations and a smooth UI.It can be used for many websites</p>
+        <a href="https://thanvishyashavanth.github.io/Login-page/">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>CALCULATOR</h3>
+        <p>Digital calculator for daily use API with animated transitions and responsive design.</p>
+        <a href="https://thanvishyashavanth.github.io/Calculator/">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Movie Website </h3>
+        <p>creating my own website to watch offline movies</p>
+        <a href="https://thanvishyashavanth.github.io/Movie-Website/">Comming Soon </a>
+      </div>
+    </div>
+  </section>
+  <!-------certificates-->
+  <section class="section" id="projects">
+    <h2>Certificates</h2>
+    <div class="certificate-grid">
+      <div class="certificate-card">
+        <h3>React for beginner</h3>
+        <img src="https://raw.githubusercontent.com/ThanvishYashavanth/Portfolio/main/files/images.jpeg" alt="jpeg">
+        <a href="https://raw.githubusercontent.com/ThanvishYashavanth/Portfolio/main/files/react%20for%20biginers.jpeg">learn more</a>
+      </div>
+      <div class="certificate-card">
+        <h3>Python 3 bootcamp</h3>
+        <img src="https://raw.githubusercontent.com/ThanvishYashavanth/Portfolio/main/files/images.jpeg" alt="jpeg">
+        <a href="https://raw.githubusercontent.com/ThanvishYashavanth/Portfolio/main/files/python%203%20bootcamp.jpeg">learn more</a>
+      </div>
+      <div class="certificate-card">
+        <h3>Machine learning & <br>artificial inteligence</h3>
+        <img src="https://raw.githubusercontent.com/ThanvishYashavanth/Portfolio/main/files/aws.png" alt="png">
+        <a href="https://raw.githubusercontent.com/ThanvishYashavanth/Portfolio/main/files/machin%20learning%20%26%20artificial%20inteligence.jpeg">learn more</a>
+      </div>
+      <div class="certificate-card">
+        <h3>microsoft Excel</h3>
+        <img src="https://raw.githubusercontent.com/ThanvishYashavanth/Portfolio/main/files/images.png" alt="png">
+        <a href="https://raw.githubusercontent.com/ThanvishYashavanth/Portfolio/main/files/microsoft%20excel.jpeg">learn more</a>
+      </div>
+      <div class="certificate-card">
+        <h3>Microsoft power Bi</h3>
+        <img src="https://raw.githubusercontent.com/ThanvishYashavanth/Portfolio/main/files/Skill-Nation.png" alt="png">
+        <a href="https://raw.githubusercontent.com/ThanvishYashavanth/Portfolio/main/files/microsoft%20power%20bi.jpeg">learn more</a>
+      </div>
+    </div>
+  </section>
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <h2>Contact Me</h2>
+    <p>📧<a href="">thanvish410@gmail.com</a></p>
+    <p>🌐 <a href="https://www.linkedin.com/in/thanvish-y-497111283">LinkedIn</a> | <a href="https://github.com/ThanvishYashavanth">GitHub</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ThanvishYashavanth. Built with 💙 and clean code.</p>
+  </footer>
+<script>
+    function toggleDarkMode() {
+        document.body.classList.toggle('dark');
+    }
+</script>
+</body>
+</html>
